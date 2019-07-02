@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Colombia",
+    "imgIzq": "../../assets/media/b-col-3.png",
+    "imgDer": "../../assets/media/b-col-4.png"
+  },
+  {
+    "nombre": "Chile",
+    "imgIzq": "../../assets/media/b-chi-3.png",
+    "imgDer": "../../assets/media/b-chi-4.png"
+  },
+  {
+    "nombre": "Venezuela",
+    "imgIzq": "../../assets/media/b-ven-3.png",
+    "imgDer": "../../assets/media/b-ven-4.png"
+  },
+  {
+    "nombre": "Argentina",
+    "imgIzq": "../../assets/media/b-arg-3.png",
+    "imgDer": "../../assets/media/b-arg-4.png"
+  },
+  {
+    "nombre": "Uruguay",
+    "imgIzq": "../../assets/media/b-uru-3.png",
+    "imgDer": "../../assets/media/b-uru-4.png"
+  },
+  {
+    "nombre": "Peru",
+    "imgIzq": "../../assets/media/b-per-3.png",
+    "imgDer": "../../assets/media/b-per-4.png"
+  },
+  {
+    "nombre": "Brasil",
+    "imgIzq": "../../assets/media/b-bra-3.png",
+    "imgDer": "../../assets/media/b-bra-4.png"
+  },
+  {
+    "nombre": "Paraguay",
+    "imgIzq": "../../assets/media/b-par-3.png",
+    "imgDer": "../../assets/media/b-par-4.png"
+  }
+]

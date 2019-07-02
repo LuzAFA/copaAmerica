@@ -1,0 +1,133 @@
+<main id="principal">
+
+  <div id="equipos-izq">
+    <div id="Colombia" class="lamina-equipo">
+      <div class="bandera"><img src="../../assets/media/b-col-2.png" alt=""></div>
+      <div class="goles"><input [(ngModel)]='cuartos[0]' type="number" class="cant-goles"></div>
+    </div>
+
+    <div id="Chile" class="lamina-equipo">
+      <div class="bandera"><img src="../../assets/media/b-chi-2.png" alt=""></div>
+
+      <div class="goles"><input [(ngModel)]='cuartos[1]' type="number" class="cant-goles"></div>
+    </div>
+
+
+    <div id="Venezuela" class="lamina-equipo">
+      <div class="bandera"><img src="../../assets/media/b-ven-2.png" alt=""></div>
+      <div class="goles"><input [(ngModel)]='cuartos[2]' type="number" class="cant-goles"></div>
+    </div>
+
+    <div id="Brasil" class="lamina-equipo">
+      <div class="bandera"><img src="../../assets/media/b-arg-2.png" alt=""></div>
+      <div class="goles"><input [(ngModel)]='cuartos[3]' type="number" class="cant-goles"></div>
+    </div>
+  </div>
+
+  <div class="semifinales">
+    <div id="sem-1" class="lamina-equipo semifinalistas">
+      <div class="bandera"><img id="semi1" src="../../assets/media/vacio1.png" alt="">
+        <span id="semi1span" class="span1"> </span>
+      </div>
+
+    </div>
+    <div id="sem-2" class="lamina-equipo semifinalistas">
+      <div class="bandera"><img id="semi2" src="../../assets/media/vacio1.png" alt="">
+        <span id="semi2span" class="span1"> </span>
+      </div>
+
+    </div>
+  </div>
+  <div id="final">
+    <div id="finalista-1" class="lamina-equipo">
+      <div class="bandera"><img id="fin1" src="../../assets/media/vacio1.png" alt="">
+        <span id="fin1span" class="spanf1"> </span>
+      </div>
+
+    </div>
+    <img src="../../assets/media/copaLogo.png" alt="" class="logo-copa">
+    <div id="finalista-2" class="lamina-equipo">
+      <div class="bandera"><img id="fin2" src="../../assets/media/vacio5.png" alt="">
+        <span id="fin2span" class="spanf2"> </span>
+      </div>
+
+    </div>
+    <button id="btn-generar" (click)="ganadorGoles()">
+      <img src="../../assets/media/boton-generar.png" alt="">
+    </button>
+  </div>
+  <div class="semifinales">
+    <div id="sem-3" class="lamina-equipo semifinalistas">
+      <div class="bandera"><img id="semi3" src="../../assets/media/vacio1.png" alt="">
+        <span id="semi3span" class="span2"> </span>
+      </div>
+
+    </div>
+    <div id="sem-4" class="lamina-equipo semifinalistas">
+      <div class="bandera"><img id="semi4" src="../../assets/media/vacio1.png" alt="">
+        <span id="semi4span" class="span2"> </span>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="equipo-der">
+    <div id="Uruguay" class="lamina-equipo">
+
+
+      <div class="bandera"><img src="../../assets/media/b-uru-2.png" alt=""></div>
+      <div class="goles"><input [(ngModel)]='cuartos[4]' type="number" class="cant-goles-2"></div>
+    </div>
+
+    <div id="Peru" class="lamina-equipo">
+
+
+      <div class="bandera"><img src="../../assets/media/b-per-2.png" alt=""></div>
+      <div class="goles"><input [(ngModel)]='cuartos[5]' type="number" class="cant-goles-2"></div>
+    </div>
+
+    <div id="Brasil" class="lamina-equipo">
+
+
+      <div class="bandera"><img src="../../assets/media/b-bra-2.png" alt=""></div>
+      <div class="goles"><input [(ngModel)]='cuartos[6]' type="number" class="cant-goles-2"></div>
+    </div>
+
+    <div id="Paraguay" class="lamina-equipo">
+
+
+      <div class="bandera"><img src="../../assets/media/b-par-2.png" alt=""></div>
+      <div class="goles"><input [(ngModel)]='cuartos[7]' type="number" class="cant-goles-2"></div>
+
+    </div>
+  </div>
+
+</main>
+
+<h1>Equipos Cuartos</h1>
+<ul>
+  <li *ngFor="let item of equipos">
+    {{item}}
+  </li>
+</ul>
+<br>
+
+<h1>Ganadores Cuartos</h1>
+<p *ngFor="let item of equipos; let i = index">
+  <span *ngIf=cuartos[i]> {{item}}</span>
+</p>
+<br>
+
+<h1>Ganadores semifinal</h1>
+<p *ngFor="let item of equipos; let i = index">
+  <span *ngIf=semifinal[i]> {{item}}</span>
+</p>
+<br>
+
+<h1>Ganador final</h1>
+<p *ngFor="let item of equipos; let i = index">
+  <span *ngIf=final[i]> {{item}}</span>
+</p>
+<br>
+
+

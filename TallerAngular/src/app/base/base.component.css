@@ -1,0 +1,153 @@
+/*Div principal*/
+#principal {
+
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  margin-left: 3%;
+  position: relative;
+}
+
+/*Div principal*/
+
+/*Estilo ficha equipo*/
+
+.lamina-equipo {
+
+  width: 15vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15vh;
+
+}
+
+img {
+  width: 10vw;
+  height: 10vh;
+}
+
+.cant-goles {
+  height: 4vh;
+  width: 2vw;
+  border-radius: 5px;
+  background-color: brown;
+  margin-left: -3vw;
+}
+
+.cant-goles-2 {
+  height: 4vh;
+  width: 2vw;
+  border-radius: 5px;
+  background-color: brown;
+  margin-left: -9.5vw;
+
+}
+
+/*Estilo ficha equipo*/
+
+/*Estilo Div Llaves*/
+
+.semifinales {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.semifinalistas {
+  margin-top: 15%;
+}
+
+#final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#finalista-1 {
+  z-index: 1;
+  margin-right: -15%;
+  margin-top: 20%
+
+}
+
+#finalista-2 {
+  z-index: 1;
+  margin-left: -15%;
+  margin-top: 20%
+}
+
+.logo-copa {
+  width: 100%;
+  height: 40vh;
+
+}
+
+/*Estilo Div Llaves*/
+
+#btn-generar {
+  border-radius: 30px;
+  z-index: 2;
+  position: absolute;
+  margin-top: 15%;
+  box-shadow: 0 0 1em gold;
+  background: url("../../assets/media/boton-generar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input{
+  font-size: 22px;
+  color: white;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+input[type=number] {
+
+    -moz-appearance:textfield;
+
+}
+
+.span1{
+  position: relative;
+  color: white;
+  font-size: 26px;
+  right: 50px;
+  bottom: 25px;
+}
+
+.span2{
+  position: relative;
+  color: white;
+  font-size: 26px;
+  right: 100px;
+  bottom: 25px;
+}
+
+.spanf1{
+  position: relative;
+  color: white;
+  font-size: 26px;
+  left: 80px;
+  bottom: 50px;
+}
+
+.spanf2{
+  position: relative;
+  color: white;
+  font-size: 26px;
+  right: -50px;
+  bottom: 50px;
+}
